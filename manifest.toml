@@ -1,0 +1,7 @@
+main = "plugin.lua"
+
+[plugin]
+name = "own-workflows"
+version = "0.1"
+authors = ["Skyler Mäntysaari"]
+homepage = "https://github.com/samip5/portla-workflows"

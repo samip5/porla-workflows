@@ -5,7 +5,7 @@ local finished  = require("workflows.triggers.torrent").finished
 
 function porla.init()
     workflows.add({
-        on = finished(),
+        trigger = finished(),
         actions = {
             function(ctx, callback)
                 local props = torrents.properties.get(ctx.torrent)

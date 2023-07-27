@@ -5,7 +5,7 @@ local cron      = require("workflows.triggers.cron")
 
 function porla.init()
     workflows.add({
-        on = cron("0 1-59/5 * * * *"),
+        trigger = cron("0 1-59/5 * * * *"),
         filter = function(ctx)
             if ctx.torrent.category == "sonarr" and (ctx.torrent.is_seeding or ctx.torrent.is_finished) then
                 local time = ctx.torrent.seeding_duration
